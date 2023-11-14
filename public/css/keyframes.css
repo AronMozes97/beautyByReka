@@ -1,0 +1,170 @@
+@keyframes changeSizeNavBrandUp {
+    from {
+        font-size: 35px;
+    }
+    to {
+        font-size: 37px;
+    }
+}
+
+@keyframes changeSizeNavBrandDown {
+    from {
+        font-size: 37px;
+    }
+    to {
+        font-size: 35px;
+    }
+}
+
+@keyframes changeSizeNavItemUp {
+    from {
+        font-size: 25px;
+        margin-inline: 3% !important;
+    }
+    to {
+        font-size: 28px;
+        margin-inline: 1% !important;
+    }
+}
+
+@keyframes changeSizeNavItemDown {
+    from {
+        font-size: 28px;
+        margin-inline: 1% !important;
+    }
+    to {
+        font-size: 25px;
+        margin-inline: 3% !important;
+    }
+}
+
+@keyframes tableRowHoverUp {
+    from {
+        transform: scale(1);
+        background-color: var(--table-bg-color);
+    }
+    to {
+        transform: scale(1.05);
+        background-color: var(--table-bg-color-hover);
+        border-radius: 10rem;
+        overflow: hidden!important;
+        border: none!important;
+    }
+}
+
+@keyframes tableRowHoverBack {
+    from {
+        transform: scale(1.05);
+        background-color: var(--table-bg-color-hover);
+        border-radius: 10rem;
+    }
+    to {
+        transform: scale(1);
+        background-color: var(--table-bg-color);
+    }
+}
+
+@keyframes bgChangeUpLeft {
+    from {
+        background-color: var(--table-bg-color);
+        color: var(--table-color);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    to {
+        background-color: var(--table-bg-color-hover);
+        color: var(--table-color-hover);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+}
+
+@keyframes bgChangeUpRight {
+    from {
+        background-color: var(--table-bg-color);
+        color: var(--table-color);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    to {
+        background-color: var(--table-bg-color-hover);
+        color: var(--table-color-hover);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}
+
+@keyframes bgChangeDownLeft {
+    from {
+        background-color: var(--table-bg-color-hover);
+        color: var(--table-color-hover);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    to {
+        background-color: var(--table-bg-color);
+        color: var(--table-color);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+@keyframes bgChangeDownRight {
+    from {
+        background-color: var(--table-bg-color-hover);
+        color: var(--table-color-hover);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    to {
+        background-color: var(--table-bg-color);
+        color: var(--table-color);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@keyframes servicesHoverUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes servicesHoverDown {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes formButtonHoverUp {
+    from {
+        color: var(--form-button-color);
+        background-color: var(--form-button-bg-color);
+        box-shadow: var(--form-button-shadow);
+    }
+    to {
+        color: var(--form-button-color-hove);
+        background-color: var(--form-button-bg-color-hover);
+        box-shadow: var(--form-button-shadow-hover);
+    }
+}
+
+@keyframes formButtonHoverDown {
+    from {
+        color: var(--form-button-color-hove);
+        background-color: var(--form-button-bg-color-hover);
+        box-shadow: var(--form-button-shadow-hover);
+    }
+    to {
+        color: var(--form-button-color);
+        background-color: var(--form-button-bg-color);
+        box-shadow: var(--form-button-shadow);
+    }
+}
+

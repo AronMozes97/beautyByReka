@@ -1,0 +1,1064 @@
+:root {
+    --nav-color: #e6a39e;
+    --nav-text-color: #fce2df;
+    --nav-menu-shadow: .2rem .2rem .7rem #AB8B88;
+    --nav-brand-shadow-hover: 0rem 0rem 1rem #FDE9E6;
+
+    --body_color: #fad2cd;
+    --body-text-color: #AB8B88;
+    --body-text-bg-color: #fce2df;
+
+    --index-shadow: 0.2rem 0.2rem .5rem #AB8B88;
+
+    --carusel-shadow: 0.2rem 0.2rem 1rem #AB8B88;
+    --carusel-indicator-color: #AB8B88;
+    --carusel-indicator-color-active: #e6a39e;
+
+    --table-bg-color: #fce2df;
+    --table-bg-color-hover: #e6a39e;
+    --table-color: #e6a39e;
+    --table-color-hover: #fce2df;
+    --table-row-color: #e6a39e;
+    --table-shadow: .2rem .2rem .7rem #AB8B88;
+
+    --form-bg-color: #fce2df;
+    --form-shadow: .2rem .2rem .7rem #AB8B88;
+
+    --form-input-bg-color: #fdf6f6;
+    --form-input-border-color: #e6a39e;
+    --form-input-border-color-hover: #e6a39e;
+    --form-input-color: /*#fce2df*/ #e6a39e;
+    --form-input-color-hover: #e6a39e;
+
+    --form-button-color: #e6a39e;
+    --form-button-bg-color: #fdf6f6;
+    --form-button-shadow: 0rem 0rem .8rem #AB8B88;
+    --form-button-color-hove: #fdf6f6;
+    --form-button-bg-color-hover: #e6a39e;
+    --form-button-shadow-hover: 0rem 0rem .8rem #AB8B88;
+
+    --footer-color: #e6a39e;
+    --footer-button-color: #e6a39e;
+    --footer-button-bg-color: #fce2df;
+    --footer-button-color-hover: #fce2df;
+    --footer-button-color-bg-hover: #e6a39e;
+    --footer-button-shadow-hover: 0rem 0rem .4rem #fce2df;
+}
+
+.container {
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: var(--body_color);
+    overflow-x: hidden;
+}
+
+.page-text {
+    font-size: 20px;
+    color: var(--body-text-color);
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .page-text {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-text {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .page-text {
+        font-size: 14px !important;
+    }
+}
+
+.h1 {
+    text-align: center !important;
+    margin-bottom: 3%;
+    color: var(--body-text-color);
+    font-weight: 800;
+}
+
+.h2 {
+    text-align: center !important;
+    margin-bottom: 3%;
+    color: var(--body-text-color);
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .h1 {
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .h1 {
+        font-weight: 600;
+    }
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(230, 163, 158, .5), var(--nav-color), rgba(230, 163, 158, .5));
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    box-shadow: .0rem .0rem 1rem var(--nav-color);
+}
+
+/*-- ScoreBar --*/
+/* This styles the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #dc8e88; /* Color of the tracking area */
+}
+
+/* This styles the scrollbar thumb (the part that you drag) */
+::-webkit-scrollbar-thumb {
+    background: var(--nav-text-color); /* Color of the thumb */
+    border-radius: 200px;
+}
+
+/* Handle the scrollbar thumb hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #dc8e88 !important; /* Color of the thumb when hovered */
+}
+
+::-webkit-scrollbar-track:hover {
+    background: var(--nav-text-color); /* Color of the tracking area */
+}
+
+/* Set the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*-- scoreBar --*/
+
+/* - NAVBAR - */
+nav {
+    background-color: var(--nav-color);
+}
+
+/* This will center your nav-items within the .core-nav horizontally */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+a.nav-link {
+    #padding-right: 5% !important;
+    font-size: 23px;
+    color: var(--nav-text-color) !important;
+    font-weight: 600;
+    text-shadow: var(--nav-menu-shadow);
+}
+
+
+.navbar-brand {
+    color: var(--nav-text-color);
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: var(--nav-menu-shadow);
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--nav-text-color);
+    text-shadow: var(--nav-brand-shadow-hover);
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: var(--nav-text-color);
+    text-shadow: var(--nav-brand-shadow-hover);
+}
+
+.navbar-nav li {
+    margin-inline: 3% !important;
+}
+
+@media (max-width: 1440px) {
+    .navbar-nav li {
+        margin-inline: 1% !important;
+    }
+
+    .nav-link {
+        font-size: 23px !important;
+    }
+
+    .navbar-brand {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-link {
+        font-size: 18px !important;
+    }
+
+    .navbar-brand {
+        font-size: 23px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 15px !important;
+    }
+
+    .navbar-brand {
+        font-size: 21px !important;
+    }
+}
+
+/* If you want to ensure the container itself is also flex and centered (though it should already be centered by default in Bootstrap) */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This would vertically center if your core has a larger height */
+}
+
+/* Ensure that your core collapse is also taking the full width to center the content properly */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* - navbar - */
+
+/* - FOOTER - */
+footer {
+    background-color: var(--footer-color);
+}
+
+.footer-container {
+    max-width: 1200px; /* or whatever max width you prefer */
+    margin: auto; /* centers the container */
+    padding: 0 15px; /* adds some padding on the sides */
+}
+
+.col.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col.footer .row img{
+    height: 100px;
+    width: auto;
+}
+
+.row.footer.social .col.footer a {
+    font-size: 35px;
+    color: var(--body-text-bg-color);
+    text-shadow: var(--nav-menu-shadow);
+}
+
+.footer.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fce2df;
+}
+
+.footer.flex-container i {
+    font-size: 15px; /* adjust icon size as needed */
+    width: 40px; /* set a fixed width for icons */
+    text-align: center; /* center icon in the fixed width */
+    color: #fce2df;
+    text-shadow: var(--nav-menu-shadow);
+}
+
+.footer.flex-container p {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 5px; /* this can be increased to create more space after the icon */
+    margin-bottom: 2px;
+    flex-grow: 1; /* allows <h6> to take up the rest of the flex container space */
+    text-shadow: var(--nav-menu-shadow);
+}
+
+@media (max-width: 768px) {
+    .footer.flex-container, .col.footer .row img, .row.footer.social .col.footer a {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .col.footer {
+        width: 100%;
+    }
+
+    .col.footer .row img {
+        height: 80px;
+    }
+
+    .row.footer.social .col.footer a {
+        font-size: 25px;
+    }
+}
+
+
+
+/*.col.footer a.btn {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footer .button {
+    color: var(--footer-button-color); !* Button text color *!
+    background-color: var(--footer-button-bg-color); !* Button background color *!
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: background-color 1.2s ease;
+}
+
+.footer .button:hover, .footer .button:focus {
+    background-color: var(--footer-button-color-bg-hover);
+    color: var(--footer-button-color-hover);
+    box-shadow: var(--footer-button-shadow-hover);
+    border: var(--body-text-bg-color) .3rem solid;
+}*/
+
+
+/* - footer - */
+
+/* - INDEX - */
+
+.col-8.index {
+    padding: 3%;
+    border: 0;
+    background-color: var(--body-text-bg-color);
+    border-radius: 10px;
+    box-shadow: var(--index-shadow);
+}
+
+.custom-container.index {
+    margin-top: 2%;
+    flex-direction: row;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.col-4.index img {
+    border-radius: 10px;
+    box-shadow: var(--index-shadow);
+}
+
+@media (max-width: 1046px) {
+    .custom-container.index {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-8.index {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 10%;
+        padding-left: 10%;
+        margin-bottom: 2%;
+    }
+
+    .col-4.index {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-4.index img {
+        height: 350px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1047px) {
+    .col-4.index {
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-container.index {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 425px) {
+    .col-8.index {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .page-text {
+        font-size: 15px;
+    }
+}
+
+/* - index - */
+
+/* - SERVICES - */
+.row.services {
+    background-color: var(--body-text-bg-color);
+    border-radius: 10px;
+    box-shadow: var(--index-shadow);
+}
+
+.col.services .services {
+    border-radius: 10px;
+}
+
+.services a {
+    text-decoration: none !important;
+}
+
+.col.services h4 {
+    color: var(--body-text-color);
+    margin-bottom: 5%;
+
+}
+
+.col.services {
+    margin-top: 3%;
+}
+
+.col.services h4 {
+    margin-top: 5%;
+}
+
+
+@media (min-width: 1440px) {
+    .col.services .services {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .custom-container.index.services {
+        flex-direction: row;
+    }
+
+    .col.services .services {
+        width: 200px;
+        height: 200px;
+    }
+
+    .col.services h4 {
+        margin: 0;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-container.index.services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col.services .services {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 425px) {
+    .col.services .services {
+        width: 200px;
+        height: auto;
+    }
+
+    .custom-container.index.services {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 375px) {
+
+}
+
+/* - services - */
+
+/* - MAKEUP - */
+.carousel.slide {
+    background-color: var(--body-text-bg-color);
+    border-radius: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    box-shadow: var(--carusel-shadow);
+}
+
+.carousel-inner {
+    width: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--carusel-shadow);
+    border-radius: 1rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1440px) {
+    .carousel-inner {
+        width: 55% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        width: 75% !important;
+    }
+}
+
+.carousel-indicators {
+    width: 68% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-indicators .other {
+    background-color: var(--carusel-indicator-color); /* Replace with your desired color */
+    width: 13px; /* or any size you want */
+    height: 13px; /* or any size you want */
+    border-radius: 50%; /* this will make them round */
+}
+
+/* Style for the active indicator */
+.carousel-indicators .active {
+    background-color: var(--carusel-indicator-color-active); /* Replace with your desired color for the active indicator */
+}
+
+.carousel-control {
+    padding: 0 !important;
+}
+
+.carousel-control-prev-icon {
+    background: url('../svg/carusel-left.svg') no-repeat;
+    background-size: contain;
+    text-shadow: var(--index-shadow);
+}
+
+.carousel-control-next-icon {
+    background: url('../svg/carusel-right.svg') no-repeat;
+    background-size: contain;
+    text-shadow: var(--index-shadow);
+}
+
+.d-block-custom {
+    display: flex;
+}
+
+/* Apply a base for all form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for labels */
+.form-group label {
+    color: var(--table-color);
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-size: 23px;
+}
+
+/* Base style for form controls */
+.form-control {
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--form-input-color);
+    background-color: var(--form-input-bg-color);
+    background-clip: padding-box;
+    border: .05em solid var(--form-input-border-color); /* Adjust the border color to match your design */
+    border-radius: .7rem;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control::placeholder {
+    color: var(--form-input-color);
+}
+
+.form-control:focus::placeholder {
+    color: var(--form-input-color-hover);
+}
+
+/* Adjustments on focus */
+.form-control:focus {
+    border-color: var(--form-input-border-color-hover);
+    outline: 0;
+    color: var(--form-input-color-hover);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(230, 163, 158, .6);
+}
+
+input[type='datetime-local']::-webkit-calendar-picker-indicator {
+    /*background: url('../svg/calendar-event_light.svg') no-repeat;*/
+    background: url('../svg/calendar-event_dark.svg') no-repeat;
+    background-size: contain;
+}
+
+/*input[type='datetime-local']:focus::-webkit-calendar-picker-indicator {
+    background: url('../svg/calendar-event_dark.svg') no-repeat;
+    background-size: contain;
+}*/
+
+
+/* Style for the submit button */
+.btn.submit {
+    display: inline-block;
+    padding: 7px 40px;
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: var(--form-button-color);
+    background-color: var(--form-button-bg-color);
+    box-shadow: var(--form-button-shadow);
+    border-radius: 1rem;
+}
+
+/* Apply the background color to the form */
+form {
+    background-color: var(--form-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--form-shadow);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-control {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .btn.submit {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
+
+
+/* - makeup - */
+/* - PriceList - */
+
+.price-list {
+    font-size: .8rem !important;
+}
+
+.table-row td {
+    background-color: var(--table-bg-color);
+    color: var(--table-color);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.table-row {
+    border-bottom: 2px solid var(--table-row-color); /* Special rows */
+}
+
+.table-features {
+    font-size: 20px !important;
+}
+
+tbody {
+    box-shadow: var(--table-shadow);
+}
+
+.table-name, .table-features {
+    text-align: left; /* Aligns text to the left */
+    padding: 5px; /* Adds padding inside cells */
+    margin-left: 5%;
+}
+
+.table-name {
+    font-weight: bold; /* Makes makeup name bold */
+    font-size: 1.1em; /* Increases font size */
+}
+
+.table-price-row {
+    display: table-cell; /* This is the default and should not be changed usually */
+    vertical-align: middle; /* This will vertically align the content in the middle of the cell */
+    padding: 8px; /* Adjust padding as needed */
+    width: 13%;
+}
+
+.table-price {
+    margin-right: 10px;
+    text-align: end !important;
+}
+
+.table-price.ft {
+    font-size: 1rem !important;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+
+    .table-price-row {
+        width: 15%;
+    }
+
+    .table-price-row.resin {
+        width: 40%;
+    }
+
+    .table-name, .table-features {
+        padding: 3px; /* Adds padding inside cells */
+    }
+
+    .table-features {
+        font-size: 15px !important;
+    }
+
+    .table-name {
+        font-size: 1em; /* Increases font size */
+    }
+}
+
+@media (max-width: 768px) {
+    /*.table-row td {
+        background-color: #1a202c !important;
+    }*/
+    .table-price-row {
+        width: 17%;
+    }
+
+    .table-price-row.resin {
+        width: 40%;
+    }
+
+    .table-price {
+        font-size: 20px;
+    }
+
+    .table-name, .table-features {
+        padding: 3px; /* Adds padding inside cells */
+    }
+
+    .table-features {
+        font-size: 13px !important;
+    }
+
+    .table-name {
+        font-size: 0.85em; /* Increases font size */
+    }
+}
+
+@media (max-width: 425px) {
+    /*.table-row td {
+        background-color: #1a202c !important;
+    }*/
+    .table-price-row {
+        width: 30%;
+    }
+
+    .table-price-row.resin {
+        width: 40%;
+    }
+
+    .table-price {
+        font-size: 16px;
+    }
+
+    .table-name, .table-features {
+        padding: 1px; /* Adds padding inside cells */
+    }
+
+    .table-features {
+        font-size: 11px !important;
+    }
+
+    .table-name {
+        font-size: 0.6em; /* Increases font size */
+    }
+
+    .table-price-row.tattoo {
+        width: 50%;
+    }
+}
+
+/* - priceList - */
+/* - Contacts - */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--body-text-bg-color);
+    border-radius: 1rem;
+    box-shadow: var(--index-shadow);
+    padding: 1rem;
+    width: 100%;
+}
+
+.contact-iframe {
+    width: 100%;
+    padding: 0; /* No padding inside this div */
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem; /* Optional padding for spacing, adjust as necessary */
+    margin-left: 2%;
+}
+
+.contact-items div {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1rem;
+    color: var(--body-text-color);
+}
+
+.contact-items div .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 0;
+}
+
+.contact-items div .address p {
+    margin: 0;
+}
+
+.contact-items div i {
+    margin-right: 1vh;
+    color: var(--body-text-color);
+}
+
+.contact-items .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contact-items a {
+    color: var(--body-text-color) !important;
+    text-decoration: none;
+    display: flex;
+}
+
+.contact-items h5 a {
+    text-decoration: underline;
+}
+
+/* Correctly target the iframe with the class 'contact' */
+iframe.contact {
+    width: 100% !important; /* Take full width of its parent container */
+    height: 100% !important; /* Set a fixed height */
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: var(--index-shadow);
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+    .contact-container {
+        flex-direction: row; /* Horizontal layout on larger screens */
+        align-items: stretch; /* Make sure the children stretch to fill the container */
+        justify-content: space-around;
+    }
+
+    .contact-items {
+        width: 40%;
+    }
+
+    iframe.contact {
+        height: auto; /* Allow the height to adjust based on its width */
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-items div h5 {
+        font-size: 16px;
+    }
+}
+
+/* - contacts - */
+/* - Cosmetic - */
+
+.col-8.cosmetic {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.col-4.cosmetic-start {
+    display: flex;
+    justify-content: start !important;
+    padding: 0;
+}
+
+.col-4.cosmetic-end {
+    display: flex;
+    justify-content: end !important;
+    padding: 0;
+}
+
+.cosmetic-bold-text {
+    font-weight: 800 !important;
+}
+
+@media (max-width: 1024px) {
+    .col-4.index.cosmetic-start {
+        order: 2;
+    }
+
+    .col-8.index.text-end.cosmetic {
+        order: 1;
+    }
+
+    .col-4.cosmetic-start {
+        justify-content: center !important;
+        margin-bottom: 3%;
+    }
+
+    .col-4.cosmetic-end {
+        justify-content: center !important;
+    }
+}
+
+.carousel-caption-container {
+    text-align: center;
+    padding-bottom: 2vh;
+    padding-top: 1% !important;
+    margin-top: 0;
+    display: none;
+}
+
+.carousel.slide.cosmetic {
+    padding-top: 0 !important;
+}
+
+.carousel-caption-container.active {
+    display: block;
+}
+
+.carousel-caption-container h4 {
+    color: var(--body-text-color);
+}
+
+/* - cosmetic - */
+/* - MakeupTattoo - */
+ul.custom-list {
+    list-style-type: none;
+}
+
+.custom-list li{
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+    .col-4.makeupTattoo img{
+        width: 400px !important;
+        height: 329px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .col-4.makeupTattoo img{
+        width: 350px !important;
+        height: 288px !important;
+    }
+}
+
+.col.makeupTattoo {
+    background-color: var(--body-text-bg-color);
+    box-shadow: var(--index-shadow);
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.custom.makeupTattoo.text {
+    padding: 5%;
+    text-align: center;
+    color: var(--body-text-color);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.row-makeupTattoo.before-after {
+    display: none;
+}
+
+.row-makeupTattoo.before-after img{
+    border-radius: 1rem;
+    box-shadow: var(--index-shadow);
+}
+
+@media (max-width: 1024px) {
+    .custom.makeupTattoo.text {
+        font-size: 18px !important;
+    }
+
+    .col-4.makeupTattoo.before-after{
+        display: none;
+    }
+
+    .row-makeupTattoo.before-after {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .custom.makeupTattoo.text {
+        font-size: 15px !important;
+    }
+
+    .row-makeupTattoo.before-after img{
+        width: auto !important;
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .custom.makeupTattoo.text {
+        font-size: 14px !important;
+    }
+
+    .row-makeupTattoo.before-after img{
+        width: auto !important;
+        height: 125px !important;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .row-makeupTattoo.before-after img{
+        width: auto !important;
+        height: 100px !important;
+    }
+}
+
+.custom.makeupTattoo.step-text{
+    padding-inline: 5%;
+    padding-block: 3%;
+}
+
+.custom.makeupTattoo.step-text ul li{
+    font-weight: 700 !important;
+}
+/* - makeupTattoo - */
+
