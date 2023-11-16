@@ -52,7 +52,7 @@
     <div class="page-text">
         <p style="margin-bottom: 0">Kiszállási díjjal / Csoportos kedvezménnyel kapcsolatban kérlek vedd fel velem a
             kapcsolatot!</p>
-        <p>Kiszállást csak Pest megyéb belül, minimum menyasszony + 3 fő sminkelésétől vállalok.</p>
+        <p>Kiszállást csak Pest megyén belül, minimum menyasszony + 3 fő sminkelésétől vállalok.</p>
     </div>
 
     <hr>

@@ -2,7 +2,7 @@ var navBrand = document.querySelector('.navbar-brand');
 var navLinks = document.querySelectorAll('.nav-link');
 var tableRows = document.querySelectorAll('.table-row.hover');
 var services = document.querySelectorAll('.col.services');
-var formSubmitButton = document.querySelector('.btn.submit')
+var formSubmitButton = document.querySelector('.btn.submit');
 
 /*navBrand.addEventListener('mouseenter', function () {
     this.style.animation = 'changeSizeNavBrandUp 1s forwards';

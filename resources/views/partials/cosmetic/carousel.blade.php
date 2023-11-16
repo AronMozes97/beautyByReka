@@ -2,7 +2,7 @@
     $images = [
         'AHA savas kúra.',
         'AHA savas kúra',
-        'Hycdroglow beauty',
+        'Hydroglow beauty',
         'Hydroglow anti-age és rf kúra..',
         'Hydroglow anti-age és rf kúra.',
         'Hydroglow anti-age és rf kúra',
@@ -14,7 +14,7 @@
     $text = [
         'AHA savas kúra',
         'AHA savas kúra',
-        'Hycdroglow beauty',
+        'Hydroglow beauty',
         'Hydroglow anti-age és rf kúra',
         'Hydroglow anti-age és rf kúra',
         'Hydroglow anti-age és rf kúra',
