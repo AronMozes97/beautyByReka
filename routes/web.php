@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\PricingController;
+use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Support\Facades\Route;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    SEOMeta::setTitle("Főoldal");
     return view('index');
 })->name('index');
 
